@@ -45,3 +45,21 @@ input.addEventListener("input", ()=>{
     output.value = value * rate.get(isoIn)[isoOut]
 
 })
+
+isoInput.addEventListener("change", ()=>{
+    const isoIn = isoInput.value
+    const isoOut = isoOutput.value
+    const value = input.value
+
+    output.value = value * rate.get(isoIn)[isoOut]
+
+})
+
+isoOutput.addEventListener("change", ()=>{
+    const isoIn = isoInput.value
+    const isoOut = isoOutput.value
+    const value = input.value
+
+    output.value = value * rate.get(isoIn)[isoOut]
+
+})
