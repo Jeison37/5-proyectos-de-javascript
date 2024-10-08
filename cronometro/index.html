@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronometro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-black text-green-500 font-mono">
+    <main class="flex justify-center items-center min-h-screen">
+
+        <div class="crono ">
+            <div class="digits text-8xl text-center">
+
+                <span class="min">00:</span><span class="sec">00</span>
+            </div>
+
+            <div class="btns mb-5 text-sm text-white flex justify-around mt-2">
+                <button id="reset-btn" class="w-[100px] bg-orange-500 px-3 py-2" >Reiniciar</button>
+                <button id="start-btn" class="w-[100px] bg-[#59b87e] px-3 py-2" >Iniciar</button>
+                <button id="turn-btn" class="w-[100px] bg-blue-500 px-3 py-2" >Vuelta</button>
+                <button id="stop-btn" class="w-[100px] bg-red-400 px-3 py-2" >Parar</button>
+            </div>
+
+            <div class="turns-container w-[300px]">
+
+                <div class="turns-head flex justify-between px-6">
+                    <span>Vuelta</span>
+
+                    <span>Hora</span>
+                </div>
+
+                <div class="turns">
+    
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>

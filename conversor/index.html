@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de monedas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        select{
+            appearance: none;
+
+            background: transparent;
+
+
+        }
+
+        
+
+        .iso{
+            box-shadow: 0px 0px 10px #53ff8f;
+            border-radius: 8px;
+            height: 3rem;
+            align-content: center;
+            font-size: 25px;
+            width: 45%;
+        }
+
+        .field{
+            border-bottom: 3px solid #fff;
+        }
+
+    </style>
+</head>
+<body class="bg-[#00290c] text-white">
+
+    <div class="h-screen flex justify-center items-center">
+        <div class="rate">
+            <div class="isos mb-4 text-center flex justify-between w-96">
+                <div class="iso iso-input">
+                    <select id="iso-input">
+                        <option >USD</option>
+                        <option >EUR</option>
+                        <option >VES</option>
+                    </select>
+                </div>
+
+                <div class="iso iso-output ">
+                    <select id="iso-output">
+                        <option >EUR</option>
+                        <option >USD</option>
+                        <option >VES</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="fields  flex justify-between" >
+
+                <div class="field">
+                    <input type="number" class="bg-transparent text-center outline-none" name="input" id="input" >
+                </div>
+                =
+                <div class="field">
+                    <input type="number" readonly class="bg-transparent text-center outline-none" name="output" id="output" >
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
